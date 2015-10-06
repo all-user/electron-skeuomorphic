@@ -1,0 +1,31 @@
+$theme_prefix = 'gray'
+
+$material = '../../node_modules/stylus-skeuomorphic/stylus/theme/gray/material.styl'
+$normal   = '../../node_modules/stylus-skeuomorphic/stylus/theme/gray/normal.styl'
+$hover    = '../../node_modules/stylus-skeuomorphic/stylus/theme/gray/hover.styl'
+$active   = '../../node_modules/stylus-skeuomorphic/stylus/theme/gray/active.styl'
+
+@import '../../node_modules/stylus-skeuomorphic/stylus/skeu.styl'
+
+$theme_prefix = 'pink'
+
+$material = '../../node_modules/stylus-skeuomorphic/stylus/theme/pink/material.styl'
+$normal   = '../../node_modules/stylus-skeuomorphic/stylus/theme/pink/normal.styl'
+$hover    = '../../node_modules/stylus-skeuomorphic/stylus/theme/pink/hover.styl'
+$active   = '../../node_modules/stylus-skeuomorphic/stylus/theme/pink/active.styl'
+
+@import '../../node_modules/stylus-skeuomorphic/stylus/skeu.styl'
+
+.button.__gray
+  @extend $gray_skeu
+  &:hover
+    @extend $gray_skeu_hover
+  &:active
+    @extend $gray_skeu_active
+
+.button.__pink
+  @extend $pink_skeu
+  &:hover
+    @extend $pink_skeu_hover
+  &:active
+    @extend $pink_skeu_active
