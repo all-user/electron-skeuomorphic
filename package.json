@@ -7,7 +7,7 @@
     "test": "testem",
     "build:es6": "babel --optional runtime src -d lib -x .es6",
     "watch:es6": "babel --optional runtime main.es6 -o main.js & watch \"npm run build:es6\" ./src/",
-    "pack": "electron-packager ./ Skeu --platform=darwin --arch=x64 --version=0.31.1 --out=/Users/keita/Desktop --icon=/workspace/all-user.org/images/alluser.icns"
+    "pack": "electron-packager ./ Skeu --platform=darwin --arch=x64 --version=0.36.3 --out=/Users/keita/Desktop --icon=/workspace/all-user.org/images/alluser.icns"
   },
   "author": "",
   "license": "MIT",
