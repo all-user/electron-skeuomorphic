@@ -1,7 +1,7 @@
-import stylus from 'stylus'
-import nib    from 'nib'
-import fs     from 'fs'
-import folder from 'folder-contents'
+let stylus = require('stylus');
+let nib    = require('nib');
+let fs     = require('fs');
+let folder = require('folder-contents');
 
 const STYLUS_DIR = `${ __dirname }/../src/stylus`;
 
@@ -35,4 +35,4 @@ function compile(str, path) {
     });
 }
 
-export default compileAll
+module.exports = compileAll;

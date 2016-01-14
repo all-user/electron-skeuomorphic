@@ -1,4 +1,4 @@
-import remote from 'remote'
+let remote = require('remote');
 let compileAll = remote.require(`${ __dirname }/lib/compile.js`);
 
 document.addEventListener('DOMContentLoaded', () => {

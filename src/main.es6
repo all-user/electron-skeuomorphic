@@ -1,8 +1,8 @@
 // import 'babel/pollyfill'
-import app           from 'app'
-import BrowserWindow from 'browser-window'
+let app           = require('app');
+let BrowserWindow = require('browser-window');
 
-import cr from 'crash-reporter'
+let cr = require('crash-reporter');
 cr.start();
 
 let mainWindow = null;
